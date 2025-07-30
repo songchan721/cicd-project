@@ -1,0 +1,22 @@
+Git Hub Action 을 ec2에 ssh로 접속해서 배포 or ecs 에 배포 (nginx 사용) 이러한 작업을 해야하는데 어떻게 해야하는지 계획을 짜고 어떻게 진행해야하는지 자세하게 상세히 단계적이고 체계적으로 초보자도 알 수 있도록 알려 줄 수 있을까?ecs 에 배포 (nginx 사용) 를 사용하여 하고 싶어. 검사를 받아야 하는 내용이라 외부에서도 접근이 가능해야 하는데 이 같은 경우를 고려하여 만들어줘.
+클러스터
+action-cluster
+
+태스크 정의 패밀리:
+action-test-task
+
+github 사용자명:
+songchan721
+깃 허브 레포지토리 위치 :
+https://github.com/songchan721/cicd-project
+aws 키 등록 이미 다 해놓은 상태임.
+region: ap-northeast-2
+aws sts get-caller-identity --query Account --output text  값 :  882560847986
+
+서브넷 id : vpc-064aca651caab68b8
+보안 그룹 id : subnet-0f52eb1ab0197c57f, subnet-0d397492c54c94078, subnet-0bbab5ba76e65afdb,subnet-03183ee692d5b7b0b 
+
+간단한 웹 페이지를 만들어 배포하는 방식으로 만들면 될 것 같아.
+aws cli 를 바탕으로 진행하면 돼.
+aws configure은 이미 다 설정해 놓았어 키도 다 입력해 놓았어. json 으로 설정하고 region 도 올바르게 설정해두었어.
+aws에 이미 만든 것들이 있는지 확인하며 진행해줘.

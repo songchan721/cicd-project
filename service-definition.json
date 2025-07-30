@@ -1,0 +1,22 @@
+
+{
+    "cluster": "action-cluster",
+    "serviceName": "action-test-service",
+    "taskDefinition": "action-test-task",
+    "desiredCount": 1,
+    "launchType": "FARGATE",
+    "networkConfiguration": {
+        "awsvpcConfiguration": {
+            "subnets": [
+                "subnet-0f52eb1ab0197c57f",
+                "subnet-0d397492c54c94078",
+                "subnet-0bbab5ba76e65afdb",
+                "subnet-03183ee692d5b7b0b"
+            ],
+            "securityGroups": [
+                "sg-0325c523d6ac908b7"
+            ],
+            "assignPublicIp": "ENABLED"
+        }
+    }
+}
