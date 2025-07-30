@@ -10,7 +10,7 @@ env:
   ECR_REPOSITORY: action-test-repo
   ECS_SERVICE: action-test-service
   ECS_CLUSTER: action-cluster
-  ECS_TASK_DEFINITION: .github/workflows/task-definition.json # This is a placeholder, will be updated dynamically
+  ECS_TASK_DEFINITION: action-test-task
   CONTAINER_NAME: action-test-container
 
 jobs:
